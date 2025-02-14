@@ -46,5 +46,14 @@ sudo crontab -e
 0 4 * * * /sbin/shutdown -r now
 
 ```
+
+## Postgres默认的信息
+在n8n中，如果要存储数据，参考如下配置，可以用默认值即可，它本身也不能对外访问
+- host: postgres
+- user: myuser
+- password: mypassword
+- database: mydatabase
+- port: 5432
+
 ## 源repo地址
 [https://github.com/n8n-io/n8n-docker-caddy](https://github.com/n8n-io/n8n-docker-caddy)
